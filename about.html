@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css">
+    <title>Top Headlines</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Georgia', serif; 
+            line-height: 1.6;
+            background-color: #f9f9f9;
+            width: 100%;
+            margin: 0;
+        }
+
+        .header {
+            background-color: #491011;
+            padding: 30px;
+            color: white;
+            display: flex;
+            align-items: center;
+            text-align: center;   
+        }
+
+        .header img {
+            height: 60px;
+            margin-right: 15px;
+        }
+
+        .nav {
+            background-color: #661617;
+            padding: 15px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .nav ul {
+            list-style: none;
+            display: flex;
+        }
+
+        .nav li {
+            margin: 0 15px;
+        }
+
+        .nav a {
+            text-decoration: none;
+            color: white;
+            padding: 10px 15px;
+            border-radius: 5px;
+            transition: background 0.3s;
+        }
+
+        .nav a:hover {
+            background: #AA4A44;
+        }
+
+        .nav .nav-active {
+            background: #AA4A44;
+        }
+		
+		.nav a:active {
+            background: #491011;
+			transition: background 0s;
+         }
+
+        .search-section {
+            display: flex;
+            align-items: center;
+        }
+
+        .search-input {
+            padding: 10px;
+            width: 200px;
+            border: 1px solid #aaa;
+            border-radius: 5px;
+        }
+
+        .search-button {
+            padding: 10px 15px;
+            border: none;
+            background-color: #333;
+            color: white;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-left: 5px;
+        }
+
+        .search-button:hover {
+            background-color: #555;
+        }
+
+        .main {
+            display: block;
+            width: 100%; 
+        }
+
+        .content {
+            background-color: #ffffff;
+            color: #333;
+            padding: 80px;
+            width: 100%;
+            border-radius: 8px; 
+        }
+
+        .article {
+            margin-bottom: 20px;
+        }
+
+        .content h1, .content h2 {
+            text-align: center;
+            color: #491011; 
+        }
+
+        .content h1 {
+            font-size: 2.5em; 
+            margin-bottom: 25px;
+        }
+
+        .content p {
+            margin-bottom: 20px; 
+            text-align: center; 
+        }
+
+        .flex-container {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+
+        .member-card {
+            text-align: center;
+            margin: 10px;
+            width: 200px;
+        }
+
+        .member-card img {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            margin-bottom: 10px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #491011;
+            color: white;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+
+    </style>
+</head>
+<body>
+    <header class="header">
+        <img src="logo.png" alt="Logo"> 
+        <h1>Top Headlines</h1>
+    </header>
+    <nav class="nav">
+        <ul>
+            <li><a href="index.html">Home</a></li> 
+            <li><a href="content.html">Content</a></li>
+            <li><a class="nav-active" href="about.html">About</a></li>
+        </ul>
+        <div class="search-section">
+            <input type="text" class="search-input" placeholder="Search...">
+            <button class="search-button">Search</button>
+        </div>
+    </nav>
+
+    <main class="content">
+        <h1>Get to know the members:</h1>
+        
+        <div class="flex-container">
+            <div class="member-card">
+                <img src="member1.jpg" alt="Member 1">
+                <h4>Stella Marie C. Mateong</h4>
+				<p>Main code contributor, Media designer</p>
+            </div>
+            <div class="member-card">
+                <img src="member2.jpg" alt="Member 2">
+				<h4>Chiara Renee B. Gevero </h4>
+				<p>Code contributor, Writer</p>
+            </div>
+            <div class="member-card">
+                <img src="member3.jpg" alt="Member 3">
+                <h4>John Sebastian C. Solano</h4>
+				<p>Code contributor, Writer </p>
+            </div>
+            <div class="member-card">
+                <img src="member4.jpg" alt="Member 4">
+                <h4>Twyla Anya P. Estella</h4>
+				<p>Media deisgner, Writer</p>
+            </div>
+            <div class="member-card">
+                <img src="member5.jpg" alt="Member 5">
+                <h4>Risha Jelene C. Dauz</h4>
+				<p>Media deisgner</p>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Top Headlines</p>
+    </footer>
+</body>
+</html>
